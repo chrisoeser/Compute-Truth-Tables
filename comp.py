@@ -12,5 +12,4 @@ def table():
             print('___', end='')
         print()
 
-
 table()
