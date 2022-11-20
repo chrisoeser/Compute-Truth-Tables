@@ -3,7 +3,7 @@ Compute-Truth-Tables
 
 This program inputs two arbitrary Boolean expressions, generates each truth table and then compare them to check for equivalences
 
-It prints out their truth tables.
+
 
 |  A  |  B  | AND |
 |:---:|:---:|:---:|
