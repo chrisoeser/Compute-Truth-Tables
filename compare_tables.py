@@ -24,7 +24,10 @@ def compare_truth_tables(expression1, expression2):
         result2 = eval(expression2, assignment)
 
         # Print the values of the variables and the results of the expressions
-        print('| ' + ' | '.join(str(int(v)).rjust(width) for v in values) + ' |  ' + str(result1).ljust(7) + '|  ' + str(result2).ljust(7) + '|')
+        if result1 != result2:
+            print('| ' + ' | '.join(str(int(v)).rjust(width) for v in values) + ' |  ' + str(result1).ljust(7) + '|  ' + str(result2).ljust(7) + '| *')
+        else:
+            print('| ' + ' | '.join(str(int(v)).rjust(width) for v in values) + ' |  ' + str(result1).ljust(7) + '|  ' + str(result2).ljust(7) + '|')
 
     # Print the footer row
     print('+' + '+'.join(['-' * (width + 2) for v in variables]) + '+---------+---------+')
